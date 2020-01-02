@@ -4,4 +4,8 @@ This is an ansible playbook for the latest version of the ELK Stack. The ELK Sta
 
 To run playbook:
 
+``` pip install docker-py ```
+
+``` docker network create elk ```
+
 ``` ansible-playbook elk.yml ```
