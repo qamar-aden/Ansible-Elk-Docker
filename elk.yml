@@ -1,8 +1,9 @@
----
-- hosts: "{{ ehosts | default('prod') }}"
-  become: true
+- name: Deploy Elk Server
+  hosts: localhost
+  become: yes
+  become_user: root
+  remote_user: elk-user
   roles:
-  - { role: elasticsearch, tags: ["elasticsearch"] }
-  - { role: kibana, tags: ["kibana"] }
-  - { role: logstash, tags: ["logstash"] }
-  - { role: nginx, tags: ["nginx"] }
+    - elk
+  tags: 
+    - elk
