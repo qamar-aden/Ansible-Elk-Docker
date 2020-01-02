@@ -1,0 +1,9 @@
+- name: Deploy Elk Server
+  hosts: localhost
+  become: yes
+  become_user: root
+  remote_user: elk-user
+  roles:
+    - elk
+  tags: 
+    - elk
