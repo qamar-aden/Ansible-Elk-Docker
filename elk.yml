@@ -1,8 +1,0 @@
----
-- hosts: "{{ ehosts | default('prod') }}"
-  become: true
-  roles:
-  - { role: elasticsearch, tags: ["elasticsearch"] }
-  - { role: kibana, tags: ["kibana"] }
-  - { role: logstash, tags: ["logstash"] }
-  - { role: nginx, tags: ["nginx"] }
