@@ -4,6 +4,6 @@
   become_user: root
   remote_user: elk-user
   roles:
-    - elk
-  tags: 
-    - elk
+    - { role: elasticsearch, tags: ["elasticsearch"] }
+    - { role: kibana, tags: ["kibana"] }
+    - { role: logstash, tags: ["logstash"] }
