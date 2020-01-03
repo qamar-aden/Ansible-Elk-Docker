@@ -9,4 +9,5 @@
     ports:
     - "9200:9200"
     - "9300:9300"
-
+    volumes:
+    - ./roles/elasticsearch/templates/elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml
