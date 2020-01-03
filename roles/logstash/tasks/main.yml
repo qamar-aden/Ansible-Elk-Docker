@@ -7,3 +7,5 @@
     ports:
     - "5000:5000"
     - "9600:9600"
+    volumes:
+    - ./roles/logstash/templates/logstash.yml:/usr/share/elasticsearch/config/logstash.yml
