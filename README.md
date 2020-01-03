@@ -6,7 +6,7 @@ To run playbook:
 
 ``` pip install docker-py ```
 
-``` docker network create elk  ```
+``` docker network create elk ```
 
 ``` ansible-playbook elk.yml ```
 
