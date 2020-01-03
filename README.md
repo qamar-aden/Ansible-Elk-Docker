@@ -9,3 +9,11 @@ To run playbook:
 ``` docker network create elk ```
 
 ``` ansible-playbook elk.yml ```
+
+To run only one role:
+
+``` ansible-playbook elk.yml --tags elasticsearch```
+
+To remove all containers:
+
+``` ansible-playbook elk-clean.yml ```

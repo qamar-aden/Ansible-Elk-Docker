@@ -1,0 +1,12 @@
+- name: Create an elastic container
+  docker_container:
+    name: elasticsearch
+    image: elasticsearch:7.5.1
+    env:
+        discovery.type: "single-node"
+    networks:
+    - name: "elk"
+    ports:
+    - "9200:9200"
+    - "9300:9300"
+

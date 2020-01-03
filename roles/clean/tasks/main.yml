@@ -1,0 +1,21 @@
+---
+- name: Remove elastic search container
+  docker_container:
+    name: "elasticsearch"
+    state: absent
+  tags:
+  - elasticsearch
+
+- name: Remove kibana container
+  docker_container:
+    name: "kibana"
+    state: absent
+  tags:
+  - kibana
+
+- name: Remove logstash container
+  docker_container:
+    name: "logstash"
+    state: absent
+  tags:
+  - logstash
